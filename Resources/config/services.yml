@@ -1,0 +1,11 @@
+services:
+    creonit_propel_injector:
+        class: Creonit\PropelInjectorBundle\PropelInjector
+        arguments: ["@service_container"]
+
+    creonit_propel_injector.request_listener:
+        class: Creonit\PropelInjectorBundle\EventListener\RequestListener
+        tags:
+            - { name: kernel.event_listener, event: kernel.request}
+        calls:
+            - ['setContainer', ['@service_container']]

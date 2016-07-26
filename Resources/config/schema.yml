@@ -1,0 +1,7 @@
+database:
+    +:
+        name: default
+        namespace: Creonit\PropelInjectorBundle\Model
+        defaultIdMethod: native
+
+    +behavior: [Creonit\PropelInjectorBundle\Behavior\PropelInjectorBehavior]

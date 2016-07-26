@@ -1,0 +1,16 @@
+{
+  "name": "creonit/propel-injector-bundle",
+  "keywords": [
+    "creonit",
+    "symfony",
+    "bundle",
+    "propel",
+    "service container"
+  ],
+  "license": "GNU GPLv3",
+  "autoload": {
+    "psr-4": {
+      "Creonit\\PropelInjectorBundle\\": ""
+    }
+  }
+}
