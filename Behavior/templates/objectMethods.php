@@ -1,3 +1,3 @@
-public function getContainer(){
+protected function getContainer(){
     return \Creonit\PropelInjectorBundle\PropelInjector::getInstance();
 }
